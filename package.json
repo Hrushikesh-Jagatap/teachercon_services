@@ -20,6 +20,7 @@
         "type": "git",
         "url": ""
     },
+
     "author": "Hrushikesh Jagatap",
     "license": "ISC",
     "private": true,
