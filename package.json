@@ -20,7 +20,7 @@
         "type": "git",
         "url": ""
     },
-    "author": "Amit Kumar",
+    "author": "Hrushikesh Jagatap",
     "license": "ISC",
     "private": true,
     "dependencies": {
