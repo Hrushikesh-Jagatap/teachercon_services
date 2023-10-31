@@ -9,7 +9,8 @@ const GetTutororAssignment = require('./GetTutororAssignment'); // done
 const GetOnlineOrHome = require('./GetOnlineOrHome'); // done
 const GetSubjectandlocation = require('./GetSubjectandlocation'); // done
 
-const GetmailinTutor = require('./GetmailinTutor'); // done
+const GetmailinTutor = require('./getmailinTutor'); // done
+ // done
 // const StudentDetailsById = require('./StudentDetailsById') // done
 
 // const UpdateStudentById = require('./UpdateStudentById'); // done
