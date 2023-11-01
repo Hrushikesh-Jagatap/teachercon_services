@@ -5,7 +5,7 @@ const UserData = require('@root/src/apis/models/tutor');
   const getmail = async (email) => {
     // const getmailandpassword = async (email,password) => {
     try {
-          const user = await UserData.findOne({email:email});
+          const user = await UserData.find({email:email});
 
           if(!user){
             return "null";
