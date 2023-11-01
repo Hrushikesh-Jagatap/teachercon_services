@@ -4,9 +4,12 @@ const UserData = require('@root/src/apis/models/user');
 const login = async (email,password) => {
     try {
       const user = await UserData.findOne({email:email, password:password});
+      if(!user){
+        return null;
+      }
       console.log(user);
         const response={
-      _id: user._id,
+      // _id: user._id,
       email:user.email,
       name:user.name,
       usertype:user.usertype,

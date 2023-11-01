@@ -5,17 +5,17 @@ const checklogin = require('@models/user');
 // Controller function to get a single student by userID
 const login = async (req, res, next) => {
     try {
-        console.log(req.params)
-        const user = await Getlogin.login(req.body.email,req.body.password);
+        console.log(req.query)
+        const user = await Getlogin.login(req.query.email,req.query.password);
         console.log(user);
 
         if (!user) {
               return HttpResponseHandler.success(req, res, "Invaild email ,password");
             //return HttpResponseHandler.success(req, res, user);
         }
-           await checklogin.findOneAndUpdate({ email:  req.body.email}, { is_login: true });
+           await checklogin.findOneAndUpdate({ email:  req.query.email}, { is_login: true });
         
-        const Response = await Getlogin.login(req.body.email,req.body.password);
+        const Response = await Getlogin.login(req.query.email,req.query.password);
 
 
         return HttpResponseHandler.success(req, res, Response);

@@ -19,9 +19,10 @@ const tutorSchema = new mongoose.Schema({
   I_need_someone:String,
   
   language: String,
-//   upload: [String], 
-  islogin:Boolean,
-  is_verfiy_otp:false
+   upload: [String], 
+   //isopen:Boolean,
+  // islogin:Boolean,
+  // is_verfiy_otp:false
 });
 
 module.exports = mongoose.model('Tutor', tutorSchema);

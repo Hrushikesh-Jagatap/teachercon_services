@@ -11,7 +11,7 @@ const GetSubjectandlocation = require('./GetSubjectandlocation'); // done
 
 const GetmailinTutor = require('./getmailinTutor'); // done
  // done
-// const StudentDetailsById = require('./StudentDetailsById') // done
+ const CreateBlog = require('./CreateBlog') // done
 
 // const UpdateStudentById = require('./UpdateStudentById'); // done
 
@@ -25,7 +25,7 @@ const GetmailinTutor = require('./getmailinTutor'); // done
 
  const login = require('./login')
 const logout = require('./logout')
-// const updateStatus = require("./updateStatus")
+ const GetallBlog = require("./GetallBlog")
 
  const gettutordata = require('./gettutordata')
 
@@ -43,7 +43,7 @@ const logout = require('./logout')
 
 
 // // Route to get a single student by ID
-// router.use('/', StudentDetailsById);
+
 
 // // Route to update a student by ID
 // router.use('/', UpdateStudentById);
@@ -55,7 +55,6 @@ const logout = require('./logout')
 
 
 // // router to update status 
-// router.use('/', updateStatus);
 router.use('/',Createuser);
  router.use('/', login);
  router.use('/', logout);
@@ -64,6 +63,8 @@ router.use('/',Createuser);
   router.use('/',GetTutororAssignment)
    router.use('/',GetOnlineOrHome)
       router.use('/',GetSubjectandlocation)
+      router.use('/', CreateBlog);
+router.use('/', GetallBlog);
 
   router.use('/', GetmailinTutor);
 
