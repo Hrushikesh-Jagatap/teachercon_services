@@ -23,6 +23,8 @@ const tutorSchema = new mongoose.Schema({
    //isopen:Boolean,
   // islogin:Boolean,
   // is_verfiy_otp:false
-});
+},
+ { timestamps: true }
+);
 
 module.exports = mongoose.model('Tutor', tutorSchema);
