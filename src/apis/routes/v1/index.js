@@ -8,6 +8,10 @@ const Createuser = require('./CreateUser'); // done
 const GetTutororAssignment = require('./GetTutororAssignment'); // done
 const GetOnlineOrHome = require('./GetOnlineOrHome'); // done
 const GetSubjectandlocation = require('./GetSubjectandlocation'); // done
+const CreateStore = require('./CreateStore'); // done
+const GetAllstore = require('./GetAllstore'); // done
+const getstoredatawithfilter = require('./getstoredatawithfilter'); // done
+
 
 const GetmailinTutor = require('./getmailinTutor'); // done
  // done
@@ -65,6 +69,10 @@ router.use('/',Createuser);
       router.use('/',GetSubjectandlocation)
       router.use('/', CreateBlog);
 router.use('/', GetallBlog);
+router.use('/', CreateStore);
+router.use('/', GetAllstore);
+router.use('/', getstoredatawithfilter);
+
 
   router.use('/', GetmailinTutor);
 

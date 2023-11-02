@@ -3,7 +3,8 @@
 const mongoose = require('mongoose');
 const UserModel = require('@root/src/apis/models/user');
 const TutorModel = require('@root/src/apis/models/tutor');
-
+const blogModel = require('@root/src/apis/models/blog');
+const storeModel = require('@root/src/apis/models/store');
 // const EmployeeModel = require('@models/Employee');
 const config = require('@config');
 
