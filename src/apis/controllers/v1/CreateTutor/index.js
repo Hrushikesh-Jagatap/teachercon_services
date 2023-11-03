@@ -10,7 +10,7 @@ const createTutor = async (req, res, next) => {
        // let password=req.body.password;
         const exstingUser = await checkmail.getmail(email);
 
-        if(exstingUser == "null")
+        if(exstingUser == "null" || exstingUser.length<=0)
         {
         const newUser = await TutorService.createTutor(req.body);
 
