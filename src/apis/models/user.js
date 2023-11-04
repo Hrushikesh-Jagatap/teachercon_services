@@ -20,6 +20,7 @@ const userSchema = new mongoose.Schema({
     req_status:[{
       email:String,
       status:String,
+      tutorid:String,
       subject:String,
       flag:String
     }]
