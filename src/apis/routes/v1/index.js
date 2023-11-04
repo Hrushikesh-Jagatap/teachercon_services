@@ -14,6 +14,10 @@ const getstoredatawithfilter = require('./getstoredatawithfilter'); // done
 
 
 const GetmailinTutor = require('./getmailinTutor'); // done
+
+const GetMailinStore = require('./GetMailinStore'); // done
+
+
  // done
  const CreateBlog = require('./CreateBlog') // done
 
@@ -33,6 +37,7 @@ const logout = require('./logout')
 
  const gettutordata = require('./gettutordata')
 
+const updateStatus = require("./updateStatus")
 
 // router.use('/', EducationDetails);
 
@@ -72,8 +77,10 @@ router.use('/', GetallBlog);
 router.use('/', CreateStore);
 router.use('/', GetAllstore);
 router.use('/', getstoredatawithfilter);
+router.use('/', updateStatus);
 
 
   router.use('/', GetmailinTutor);
+    router.use('/', GetMailinStore);
 
 module.exports = router;

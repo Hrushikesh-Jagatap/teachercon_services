@@ -9,6 +9,9 @@ const storeSchema = new mongoose.Schema({
     // },
     Deatils_Of_your_product:{
         type:String
+    },
+    email:{
+        type:String,
     },    
     price:{
         type:String

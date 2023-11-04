@@ -20,6 +20,11 @@ const tutorSchema = new mongoose.Schema({
   
   language: String,
    upload: [String], 
+   
+   isactive:{
+    type:Boolean,
+    default: true,
+   },
    //isopen:Boolean,
   // islogin:Boolean,
   // is_verfiy_otp:false
