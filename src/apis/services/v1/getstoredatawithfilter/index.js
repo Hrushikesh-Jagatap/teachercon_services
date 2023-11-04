@@ -78,7 +78,7 @@ const getstoredata = async (query) => {
     const Data = await StoreData.find(filter).exec();
 
     if (Data.length === 0) {
-      return "Data not found";
+      return Data;
     }
 
     return Data;
