@@ -6,16 +6,16 @@ const StudentService = require('@services/v1/updateStatus');
 // Controller function to update a teacher by ID
 const updatestatus = async (req, res) => {
   try {
-    const updatedStudent = await StudentService.updateStudentStatus(req.params.id, req.body);
+    const data = await StudentService.updateStudentStatus(req.params.id, req.body);
 
-    if (!updatedStudent) {
-      return HttpResponseHandler.success(req, res, updatedStudent);
+    if (!data) {
+      return HttpResponseHandler.success(req, res, data);
 
     }
-    return HttpResponseHandler.success(req, res, updatedStudent);
+    return HttpResponseHandler.success(req, res, data);
 
   } catch (error) {
-    next(error)
+  //  next(error)
   }
 };
 

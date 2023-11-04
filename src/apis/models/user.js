@@ -16,7 +16,13 @@ const userSchema = new mongoose.Schema({
     is_login:{
         type:Boolean,
         default:false,
-    }
+    },
+    req_status:[{
+      email:String,
+      status:String,
+      subject:String,
+      flag:String
+    }]
   },
   { timestamps: { createdAt: true, updatedAt: true }
 

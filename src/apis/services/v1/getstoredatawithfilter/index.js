@@ -52,6 +52,7 @@
 // module.exports = {
 //   getstoredata,
 // };
+
 const StoreData = require('@models/store');
 
 const getstoredata = async (query) => {
