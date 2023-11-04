@@ -127,7 +127,8 @@ const updateStudentStatus = async (Email1, studentData) => {
       return "Student not found";
     }
 
-    let { email, status, flag, subject } = studentData;
+    // let { email, status, flag, subject } = studentData;
+    let { email, status, flag, subject,tutorid } = studentData;
 
     // Check and update the status for the first context
     let existingStatus = student.req_status.find(
@@ -137,7 +138,9 @@ const updateStudentStatus = async (Email1, studentData) => {
     if (existingStatus) {
       existingStatus.status = status;
     } else {
-      student.req_status.push({ email, status, flag, subject });
+      // student.req_status.push({ email, status, flag, subject });
+          student.req_status.push({ email, status, flag, subject,tutorid });
+
     }
 
     const updatedStudent = await student.save();
@@ -152,7 +155,9 @@ const updateStudentStatus = async (Email1, studentData) => {
     if (existingStatus12) {
       existingStatus12.status = status;
     } else {
-      student1.req_status.push({ email: Email1, status, flag, subject });
+      // student1.req_status.push({ email: Email1, status, flag, subject });
+             student1.req_status.push({ email: Email1, status, flag, subject,tutorid });
+
     }
 
     const updatedStudent1 = await student1.save();
