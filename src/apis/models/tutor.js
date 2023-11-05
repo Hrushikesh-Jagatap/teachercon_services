@@ -20,7 +20,14 @@ const tutorSchema = new mongoose.Schema({
   
   language: String,
    upload: [String], 
-   
+    req_status:[{
+      email:String,
+      status:String,
+      flag:String,
+      subject:String,
+      tutorid:String,
+      
+   }],
    isactive:{
     type:Boolean,
     default: true,
