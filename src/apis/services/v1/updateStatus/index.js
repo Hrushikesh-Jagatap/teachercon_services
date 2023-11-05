@@ -163,7 +163,9 @@ const updateStudentStatus = async (Email1, studentData) => {
     const updatedStudent1 = await student1.save();
 
 
-let tutor_id=studentData.tutorid
+
+  if (studentData.status == "Requsted") {
+ let tutor_id=studentData.tutorid
   const tutorObjectId = mongoose.Types.ObjectId(tutor_id);
         console.log(tutorObjectId)
      const data=await tutorData.findById({ _id: tutorObjectId});
@@ -181,7 +183,9 @@ const existingStatus1111 = data.req_status.find(
     }
 //data.req_status.push({ email:Email1, status, flag,subject,tutorid });
  const updatedata = await data.save();
+  }
 
+           
            
     return updatedStudent1;
   } catch (error) {
