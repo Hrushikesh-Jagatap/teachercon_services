@@ -38,7 +38,7 @@ const logout = require('./logout')
  const gettutordata = require('./gettutordata')
 
 const updateStatus = require("./updateStatus")
-
+const updateStatus1 = require("./updateStatus1")
 // router.use('/', EducationDetails);
 
 // router.use('/', PersonalDetails); // api for updated persponal details
@@ -78,6 +78,7 @@ router.use('/', CreateStore);
 router.use('/', GetAllstore);
 router.use('/', getstoredatawithfilter);
 router.use('/', updateStatus);
+router.use('/', updateStatus1);
 
 
   router.use('/', GetmailinTutor);
